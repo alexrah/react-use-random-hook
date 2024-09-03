@@ -4,7 +4,7 @@ A React hook for generating random numbers and keep them consistent between rend
 
 ## Overview
 
-This package exports a React hook, `useRandom`, which generates a random number between 0 and 1. The hook also provides a provider, `RandomNumberProvider`, which is required to enable `useRandom`.
+This package exports a React hook, `useRandomNumber`, which generates a random number between 0 and 1. The hook also provides a provider, `RandomNumberProvider`, which is required to enable `useRandomNumber`.
 
 ## Exported Functions
 
@@ -50,15 +50,15 @@ const App = () => {
 In this example, the random number generated will be between 0 and 100.
 
 
-### `useRandom`
+### `useRandomNumber`
 
 ```typescript
-import { useRandom } from '@alexrah/react-use-random-hook';
+import { useRandomNumber } from '@alexrah/react-use-random-hook';
 
-const random = useRandom();
+const random = useRandomNumber();
 ```
 
-The `useRandom` hook returns a random number between 0 and 1. The number does not change between renders.
+The `useRandomNumber` hook returns a random number between 0 and 1. The number does not change between renders.
 
 
 ## Scripts
@@ -120,15 +120,15 @@ The `analyze` script runs the `size-limit --why` command, which provides more de
 Here is an example of how to use the `useRandom` hook:
 ```typescript
 import React from 'react';
-import { useRandom, RandomNumberProvider } from '@alexrah/react-use-random-hook';
+import { useRandomNumber, RandomNumberProvider } from '@alexrah/react-use-random-hook';
 
 const App = () => {
-  const random = useRandom();
+  const random = useRandomNumber();
   return <div>Random number: {random}</div>;
 };
 
 ReactDOM.render(<RandomNumberProvider><App/></RandomNumberProvider>, document.getElementById('root'));
 
 ```
-This code defines a React component that uses the `useRandom` hook to generate a random number, and then displays the number in a `div` element.
+This code defines a React component that uses the `useRandomNumber` hook to generate a random number, and then displays the number in a `div` element.
 
