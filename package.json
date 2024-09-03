@@ -1,13 +1,20 @@
 {
   "name": "@alexrah/react-use-random-number-hook",
   "author": "alessandro stoppato",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexrah/react-use-random-hook.git"
   },
   "homepage": "https://github.com/alexrah/react-use-random-hook#readme",
+  "description": "A React hook for generating random numbers and keep them consistent between renders.",
+  "keywords": [
+    "react",
+    "random",
+    "hooks",
+    "number"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [

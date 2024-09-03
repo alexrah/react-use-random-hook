@@ -1,4 +1,4 @@
-# React Use Random Hook
+# React useRandom() Hook
 
 A React hook for generating random numbers and keep them consistent between renders.
 
