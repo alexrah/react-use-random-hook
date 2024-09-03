@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/alexrah/react-use-random-hook.git"
   },
+  "homepage": "https://github.com/alexrah/react-use-random-hook#readme",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
