@@ -1,6 +1,12 @@
 {
+  "name": "@alexrah/react-use-random-hook",
+  "author": "alessandro stoppato",
   "version": "0.1.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrah/react-use-random-hook.git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -32,8 +38,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-use-random-hook",
-  "author": "alessandro stoppato",
   "module": "dist/react-use-random-hook.esm.js",
   "size-limit": [
     {
