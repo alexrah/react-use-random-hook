@@ -14,7 +14,7 @@ export const useRandomNumber = () => {
 };
 
 export const RandomNumberProvider = ({children, base = 1}: tRandomProviderProps) => {
-  const [random, ] = React.useState<number>(Math.random()*base);
+  const [random, ] = React.useState<number>( () =>{return Math.random()*base});
 
   return (
     <RandomContext.Provider value={{random}}>
