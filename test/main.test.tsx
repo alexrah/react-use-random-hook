@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { RandomProvider, useRandom } from "../src/index";
+import { RandomProvider, useRandom, generateRandomString } from "../src/index";
 
 describe('RandomNumberProvider', () => {
   it('provides a random number with default base', () => {
@@ -72,6 +72,14 @@ describe('RandomNumberProvider', () => {
     console.log('randomStringElement.textContent', randomStringElement.textContent);
     expect((randomStringElement.textContent as string).length).toBe(10);
   });
+
+  it('generate a random string with custom length of 10', () => {
+
+    const randomString = generateRandomString(10);
+    console.log('randomString',randomString);
+    expect(randomString.length).toBe(10);
+
+  })
 
 
 });

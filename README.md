@@ -89,8 +89,33 @@ The `useRandom` hook returns an object with two properties: `randomNumber` and `
 - The `randomString: string` property returns a random string of the specified length. The string does not change between renders.
 
 
+### `generateRandomString`
+
+#### Description
+
+Generates a random string of a specified length.
+
+#### Parameters
+
+* `stringLength`: The length of the random string to be generated. (Type: `number`)
+
+#### Returns
+
+A random string of the specified length. (Type: `string`)
+
+#### Example Usage
+
+```typescript
+const randomString = generateRandomString(10);
+console.log(randomString); // Output: a random string of length 10
+```
+
+#### Implementation
+
+The `generateRandomString` function uses a combination of uppercase and lowercase letters, as well as numbers, to generate a random string. The function iterates `stringLength` times, selecting a random character from the character set and appending it to the result string.
+
+
 ## Scripts
----------
 
 The package defines several scripts in `package.json`:
 
